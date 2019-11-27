@@ -7,7 +7,6 @@
     "type": "git",
     "url": ""
   },
-  "dependencies": {},
   "scripts": {
     "servers": "NODE_ENV=development gulp watch",
     "dev-server": "NODE_ENV=development gulp dev_server",
@@ -27,11 +26,12 @@
   "author": "Shaun Hinchy",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "7.0.0-beta.34",
-    "@babel/preset-react": "^7.0.0-beta.36",
-    "babel-loader": "8.0.0-beta.0",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "8.0.6",
     "babel-preset-react": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "browser-sync": "^2.26.3",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "4.0.0",
@@ -46,6 +46,7 @@
     "react-dom": "^16.8.6",
     "uglify-js": "3.2.2",
     "webpack": "3.10.0",
-    "webpack-stream": "4.0.0"
+    "webpack-stream": "4.0.0",
+    "react-async": "^9.0.0"
   }
 }

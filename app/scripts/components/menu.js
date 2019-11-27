@@ -3,21 +3,8 @@
  * 
  */
 import React from 'react';
-import { useState } from 'react';
-
-const useFlag = () => {
-    const [flag, setFlag] = useState(false);
-
-    const toggleFlag = () => {
-        const newVal = !flag;
-
-        setFlag(newVal);
-
-        return newVal;
-    };
-
-    return { flag, setFlag, toggleFlag };
-};
+import {useFlag} from "../Hooks/useFlag";
+import {SearchForm} from "./SearchForm";
 
 const Menu = () => {
     const { flag: searchVisible, toggleFlag: toggleSearch } = useFlag();
@@ -42,42 +29,7 @@ const Menu = () => {
                     </nav>
                 </div>
             </div>
-            {  searchVisible && <form className="search">
-                <div className="search-container">
-                    <input type="text"
-                           name="search"
-                           id="search"
-                           className="search-field"
-                           placeholder="Enter Search Term"
-                           aria-label="Enter Search Term"
-                           autoComplete="off"
-                    />
-                    <div className="shown-results" aria-live="assertive">
-                        <a className="results-display">
-                                   <span className="search-count">
-                                     Displaying 4 of 15 Results
-                                   </span>
-                        </a>
-                    </div>
-                    <div className="products">
-                        <div className="product">
-                            <img className="product-image"
-                                 src="http://testcreative.co.uk/wp-content/uploads/2018/08/Test-Twitter-Icon.jpg">
-                            </img>
-                            <div className="product-body">
-                                <h4 className="product-name">Prep + Prime Skin Refined Zone</h4>
-                                <div className="product-description">
-                                    Minimizes Pores, Mattifying, Controls Oil <div className="product-price">
-                                    20.00
-                                </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </form> }
-
+            { searchVisible &&  <SearchForm /> }
         </header>
     );
 };
