@@ -28,3 +28,10 @@
 [27/11/2019 -- 13:18]  Sass ran on files
 [27/11/2019 -- 13:18]  Sass ran on files
 [27/11/2019 -- 13:19]  Sass ran on files
+[27/11/2019 -- 13:22]  Sass ran on files
+[27/11/2019 -- 13:39]  Sass ran on files
+[27/11/2019 -- 13:39]  Scripts ran on main.js
+[27/11/2019 -- 13:43]  Scripts ran on main.js
+[27/11/2019 -- 13:43]  Sass ran on files
+[27/11/2019 -- 13:44]  Scripts ran on main.js
+[27/11/2019 -- 13:44]  Scripts ran on main.js

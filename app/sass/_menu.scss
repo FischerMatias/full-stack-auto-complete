@@ -64,38 +64,8 @@ header.menu {
         }
     }
 
-    /*div.search-container {
-        position: absolute;
-        background-color: white;
-        z-index: 20;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        width: 100%;
-        padding: 5px;
-        background-color: white;
-        border-bottom: 1px solid #CCC;
-        display: none;
-        &.showing { display: block; }
-        
-        input[type='text'] {
-            min-width: 100%;
-            font-size: 36px;
-            line-height: $lineHeightForSearch;
-            border: 1px solid #CCC;
-            padding: 0 10px;
-        }
-
-        i.close {
-            position: absolute;
-            right: 10px;
-            top: 5px;
-            font-size: 36px;
-            line-height: $lineHeightForSearch;
-        }
-    }*/
-
     form.search {
-        display: none;
-        &.showing { display: block; }
+        display: block;
 
         font-size: 12px;
         line-height: 1.5;
@@ -112,11 +82,9 @@ header.menu {
         z-index: 500;
         border-bottom: 1px solid #c7c7c7;
         background: white;
-        color: black;
 
         div.search-container {
             text-align: center;
-            color: black;
             box-sizing: border-box;
             width: 100%;
             max-width: 1281px;
@@ -127,7 +95,6 @@ header.menu {
             input.search-field {
                 margin: 0;
                 vertical-align: baseline;
-                color: black;
                 box-sizing: border-box;
                 outline: 0;
                 border-style: solid;
@@ -145,16 +112,12 @@ header.menu {
             }
 
             div.products {
-                -webkit-font-smoothing: antialiased;
-                color: black;
                 text-align: left;
                 box-sizing: border-box;
-                -webkit-tap-highlight-color: transparent;
                 border-top: 1px solid #c7c7c7;
                 padding: 15px 0 10px;
 
                 div.product{
-                    color: black;
                     text-align: left;
                     box-sizing: border-box;
                     width: 25%;
@@ -171,11 +134,9 @@ header.menu {
                         float: left;
                         width: 50%;
                         padding-right: 7.5px;
-                        color: black;
                     }
 
                     div.product-body {
-                        color: black;
                         text-align: left;
                         box-sizing: border-box;
                         float: right;
@@ -193,12 +154,10 @@ header.menu {
                             -webkit-transition: border-bottom-color .3s ease-in-out;
                             text-decoration: none;
                             border-bottom: none;
-                            color: black;
                             margin: 0;
                         }
 
                         div.product-description {
-                            color: black;
                             text-align: left;
                             box-sizing: border-box;
                             text-transform: uppercase;
@@ -208,7 +167,6 @@ header.menu {
             }
 
             div.shown-results {
-                color: black;
                 text-align: left;
                 box-sizing: border-box;
                 height: 60px;
@@ -225,13 +183,11 @@ header.menu {
                     -webkit-transition: border-bottom-color .3s ease-in-out;
                     text-decoration: none;
                     border-bottom: none;
-                    color: black;
 
                     span.search-count {
                         text-align: left;
                         line-height: 60px;
                         text-transform: uppercase;
-                        color: black;
                         box-sizing: border-box;
                     }
                 }
