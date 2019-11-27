@@ -1,0 +1,21 @@
+:::: Log File ::::
+
+
+[27/11/2019 -- 9:31]  Info task started
+[27/11/2019 -- 12:16]  Info task started
+[27/11/2019 -- 12:16]  Info task started
+[27/11/2019 -- 12:19]  Sass ran on files
+[27/11/2019 -- 12:19]  Scripts ran on main.js
+[27/11/2019 -- 12:20]  Scripts ran on main.js
+[27/11/2019 -- 12:21]  Scripts ran on main.js
+[27/11/2019 -- 12:58]  Scripts ran on main.js
+[27/11/2019 -- 13:0]  Sass ran on files
+[27/11/2019 -- 13:3]  Scripts ran on main.js
+[27/11/2019 -- 13:3]  Sass ran on files
+[27/11/2019 -- 13:5]  Sass ran on files
+[27/11/2019 -- 13:5]  Scripts ran on main.js
+[27/11/2019 -- 13:6]  Sass ran on files
+[27/11/2019 -- 13:6]  Scripts ran on main.js
+[27/11/2019 -- 13:7]  Sass ran on files
+[27/11/2019 -- 13:7]  Sass ran on files
+[27/11/2019 -- 13:8]  Sass ran on files

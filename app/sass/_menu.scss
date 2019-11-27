@@ -1,0 +1,292 @@
+/**
+ * The menu is technically the header of the site, it contains the styles for the drop down of the Search Bar.
+ *
+ */
+
+$lineHeightForNav: 70px;
+$lineHeightForSearch: 50px;
+
+
+header.menu {
+
+    // ...
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+    div.menu-container {
+        width: 100%;
+        background-color: black;
+        padding: 0 20px;
+        text-align: left;
+        
+        div.menu-holder {
+            position: relative;
+            width: 100%;
+            max-width: $siteWidth;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            line-height: $lineHeightForNav;
+            color: white;
+            text-align: left;
+            display: inline-block;
+        }
+        nav {
+            display: inline-block;
+            margin-left: 60px;
+
+            i { 
+                color: white; 
+                font-size: 30px;
+                line-height: $lineHeightForNav;
+            }
+            i.search {
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+
+            a.nav-item {
+                font-family: Helvetica, Arial, Sans-Serif;
+                font-size: 17px;
+                line-height: $lineHeightForNav;
+                text-transform: uppercase;
+                text-decoration: none;
+                white-space: nowrap;
+                border-bottom: 1px solid transparent;
+                color: #FFF;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    /*div.search-container {
+        position: absolute;
+        background-color: white;
+        z-index: 20;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+        border-bottom: 1px solid #CCC;
+        display: none;
+        &.showing { display: block; }
+        
+        input[type='text'] {
+            min-width: 100%;
+            font-size: 36px;
+            line-height: $lineHeightForSearch;
+            border: 1px solid #CCC;
+            padding: 0 10px;
+        }
+
+        i.close {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 36px;
+            line-height: $lineHeightForSearch;
+        }
+    }*/
+
+    form.search {
+        display: none;
+        &.showing { display: block; }
+        font-size: 12px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 500;
+        border-bottom: 1px solid #c7c7c7;
+        background: white;
+        color: black;
+
+        div.search-container {
+            font-size: 12px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+            text-align: center;
+            color: black;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            width: 100%;
+            max-width: 1281px;
+            margin: 0 auto;
+            position: relative;
+            flex-direction: column;
+
+            input.search-field {
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: transparent;
+                margin: 0;
+                vertical-align: baseline;
+                color: black;
+                box-sizing: border-box;
+                outline: 0;
+                border-style: solid;
+                border-color: #999999;
+                width: 100%;
+                -webkit-transition: border-color .3s ease-in-out;
+                border-radius: 0;
+                -webkit-appearance: none;
+                font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+                text-transform: uppercase;
+                padding: 0 15px;
+                height: 60px;
+                border-width: 0;
+                line-height: 60px;
+                font-size: 30px;
+            }
+        }
+
+
+        div.shown-results {
+            font-size: 12px;
+            -webkit-font-smoothing: antialiased;
+            color: black;
+            text-align: left;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            height: 60px;
+            font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
+            border-top: 1px solid #c7c7c7;
+            display: block;
+            line-height: 60px;
+            padding-top: 0;
+
+            a.results-display {
+                font-size: 12px;
+                -webkit-font-smoothing: antialiased;
+                text-align: left;
+                -webkit-tap-highlight-color: transparent;
+                font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
+                line-height: 60px;
+                box-sizing: border-box;
+                text-transform: uppercase;
+                -webkit-transition: border-bottom-color .3s ease-in-out;
+                text-decoration: none;
+                border-bottom: none;
+                color: black;
+
+                span.search-count {
+                    font-size: 12px;
+                    -webkit-font-smoothing: antialiased;
+                    text-align: left;
+                    -webkit-tap-highlight-color: transparent;
+                    font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    color: black;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+
+        div.products {
+            font-size: 12px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+            color: black;
+            text-align: left;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            border-top: 1px solid #c7c7c7;
+            padding: 15px 0 10px;
+
+            div.product{
+                font-size: 12px;
+                line-height: 1.5;
+                -webkit-font-smoothing: antialiased;
+                font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+                color: black;
+                text-align: left;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                width: 25%;
+                float: left;
+                clear: none;
+                padding-right: 15px;
+                padding-bottom: 10px;
+
+
+                img.product-image{
+                    text-align: left;
+                    box-sizing: border-box;
+                    display: block;
+                    float: left;
+                    width: 50%;
+                    padding-right: 7.5px;
+                    color: black;
+                }
+
+                div.product-body {
+                    font-size: 12px;
+                    line-height: 1.5;
+                    -webkit-font-smoothing: antialiased;
+                    font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+                    color: black;
+                    text-align: left;
+                    box-sizing: border-box;
+                    -webkit-tap-highlight-color: transparent;
+                    float: right;
+                    width: 50%;
+                    padding-left: 7.5px;
+
+                    h4.product-name {
+                        -webkit-font-smoothing: antialiased;
+                        text-align: left;
+                        -webkit-tap-highlight-color: transparent;
+                        box-sizing: border-box;
+                        font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        font-size: 18px;
+                        padding: 0;
+                        display: inline-block;
+                        -webkit-transition: border-bottom-color .3s ease-in-out;
+                        text-decoration: none;
+                        border-bottom: none;
+                        color: black;
+                        margin: 0px;
+                    }
+
+                    div.product-description {
+                        -webkit-font-smoothing: antialiased;
+                        color: black;
+                        text-align: left;
+                        box-sizing: border-box;
+                        -webkit-tap-highlight-color: transparent;
+                        font-size: 12px;
+                        font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
+                        line-height: 1.5;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+    }
+}
