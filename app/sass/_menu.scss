@@ -96,10 +96,11 @@ header.menu {
     form.search {
         display: none;
         &.showing { display: block; }
+
         font-size: 12px;
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
-        font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         text-align: center;
         -webkit-tap-highlight-color: transparent;
         box-sizing: border-box;
@@ -114,14 +115,9 @@ header.menu {
         color: black;
 
         div.search-container {
-            font-size: 12px;
-            line-height: 1.5;
-            -webkit-font-smoothing: antialiased;
-            font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
             text-align: center;
             color: black;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
             width: 100%;
             max-width: 1281px;
             margin: 0 auto;
@@ -129,8 +125,6 @@ header.menu {
             flex-direction: column;
 
             input.search-field {
-                -webkit-font-smoothing: antialiased;
-                -webkit-tap-highlight-color: transparent;
                 margin: 0;
                 vertical-align: baseline;
                 color: black;
@@ -142,7 +136,6 @@ header.menu {
                 -webkit-transition: border-color .3s ease-in-out;
                 border-radius: 0;
                 -webkit-appearance: none;
-                font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
                 text-transform: uppercase;
                 padding: 0 15px;
                 height: 60px;
@@ -150,143 +143,99 @@ header.menu {
                 line-height: 60px;
                 font-size: 30px;
             }
-        }
 
-
-        div.shown-results {
-            font-size: 12px;
-            -webkit-font-smoothing: antialiased;
-            color: black;
-            text-align: left;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-            height: 60px;
-            font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
-            border-top: 1px solid #c7c7c7;
-            display: block;
-            line-height: 60px;
-            padding-top: 0;
-
-            a.results-display {
-                font-size: 12px;
+            div.products {
                 -webkit-font-smoothing: antialiased;
-                text-align: left;
-                -webkit-tap-highlight-color: transparent;
-                font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
-                line-height: 60px;
-                box-sizing: border-box;
-                text-transform: uppercase;
-                -webkit-transition: border-bottom-color .3s ease-in-out;
-                text-decoration: none;
-                border-bottom: none;
                 color: black;
+                text-align: left;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                border-top: 1px solid #c7c7c7;
+                padding: 15px 0 10px;
 
-                span.search-count {
-                    font-size: 12px;
-                    -webkit-font-smoothing: antialiased;
-                    text-align: left;
-                    -webkit-tap-highlight-color: transparent;
-                    font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
-                    line-height: 60px;
-                    text-transform: uppercase;
+                div.product{
                     color: black;
-                    box-sizing: border-box;
-                }
-            }
-        }
-
-
-        div.products {
-            font-size: 12px;
-            line-height: 1.5;
-            -webkit-font-smoothing: antialiased;
-            font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
-            color: black;
-            text-align: left;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-            border-top: 1px solid #c7c7c7;
-            padding: 15px 0 10px;
-
-            div.product{
-                font-size: 12px;
-                line-height: 1.5;
-                -webkit-font-smoothing: antialiased;
-                font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
-                color: black;
-                text-align: left;
-                box-sizing: border-box;
-                -webkit-tap-highlight-color: transparent;
-                width: 25%;
-                float: left;
-                clear: none;
-                padding-right: 15px;
-                padding-bottom: 10px;
-
-
-                img.product-image{
                     text-align: left;
                     box-sizing: border-box;
-                    display: block;
+                    width: 25%;
                     float: left;
-                    width: 50%;
-                    padding-right: 7.5px;
-                    color: black;
-                }
+                    clear: none;
+                    padding-right: 15px;
+                    padding-bottom: 10px;
 
-                div.product-body {
-                    font-size: 12px;
-                    line-height: 1.5;
-                    -webkit-font-smoothing: antialiased;
-                    font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
-                    color: black;
-                    text-align: left;
-                    box-sizing: border-box;
-                    -webkit-tap-highlight-color: transparent;
-                    float: right;
-                    width: 50%;
-                    padding-left: 7.5px;
 
-                    h4.product-name {
-                        -webkit-font-smoothing: antialiased;
+                    img.product-image{
                         text-align: left;
-                        -webkit-tap-highlight-color: transparent;
                         box-sizing: border-box;
-                        font-family: TradeGothicW01-BoldCn20_675334,Helvetica,Arial,sans-serif;
-                        text-transform: uppercase;
-                        line-height: 1;
-                        font-size: 18px;
-                        padding: 0;
-                        display: inline-block;
-                        -webkit-transition: border-bottom-color .3s ease-in-out;
-                        text-decoration: none;
-                        border-bottom: none;
+                        display: block;
+                        float: left;
+                        width: 50%;
+                        padding-right: 7.5px;
                         color: black;
-                        margin: 0px;
                     }
 
-                    div.product-description {
-                        -webkit-font-smoothing: antialiased;
+                    div.product-body {
                         color: black;
                         text-align: left;
                         box-sizing: border-box;
-                        -webkit-tap-highlight-color: transparent;
-                        font-size: 12px;
-                        font-family: roboto-mono_regular,Helvetica,Arial,sans-serif;
-                        line-height: 1.5;
+                        float: right;
+                        width: 50%;
+                        padding-left: 7.5px;
+
+                        h4.product-name {
+                            text-align: left;
+                            box-sizing: border-box;
+                            text-transform: uppercase;
+                            line-height: 1;
+                            font-size: 18px;
+                            padding: 0;
+                            display: inline-block;
+                            -webkit-transition: border-bottom-color .3s ease-in-out;
+                            text-decoration: none;
+                            border-bottom: none;
+                            color: black;
+                            margin: 0;
+                        }
+
+                        div.product-description {
+                            color: black;
+                            text-align: left;
+                            box-sizing: border-box;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            div.shown-results {
+                color: black;
+                text-align: left;
+                box-sizing: border-box;
+                height: 60px;
+                border-top: 1px solid #c7c7c7;
+                display: block;
+                line-height: 60px;
+                padding-top: 0;
+
+                a.results-display {
+                    text-align: left;
+                    line-height: 60px;
+                    box-sizing: border-box;
+                    text-transform: uppercase;
+                    -webkit-transition: border-bottom-color .3s ease-in-out;
+                    text-decoration: none;
+                    border-bottom: none;
+                    color: black;
+
+                    span.search-count {
+                        text-align: left;
+                        line-height: 60px;
                         text-transform: uppercase;
+                        color: black;
+                        box-sizing: border-box;
                     }
                 }
             }
         }
-
-
-
-
-
-
-
-
-
     }
 }
