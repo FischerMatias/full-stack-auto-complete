@@ -2,7 +2,7 @@ import React from 'react';
 
 const Product =
     ({product: {
-        imageSrc,
+        picture,
         name,
         description,
         cost,
@@ -10,7 +10,7 @@ const Product =
         <div className="product">
             <img
                 className="product-image"
-                src={imageSrc}
+                src={picture}
             />
             <div className="product-body">
                 <h4 className="product-name">{name}</h4>

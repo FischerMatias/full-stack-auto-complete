@@ -3,28 +3,30 @@ import React from 'react';
 import SearchInput from "./SearchInput";
 import ResultCount from "./ResultCount";
 import ProductList from "./ProductList";
-import {useAsync} from "react-async";
+import { useFetch } from "react-async";
 
 const SearchFormResult = ({metadata, products}) =>(
     <>
         <ResultCount
-            metadata={{
-                shown: 1,
-                total: 3,
-            }}
+            metadata={metadata}
         />
         <ProductList products={products}/>
     </>
 )
 
-const SearchFormView = ({products, onSearchInputChange}) => (
+const SearchFormView = ({ metadata, products, onSearchInputChange}) => (
     <form className="search">
         <div className="search-container">
             <SearchInput onChange={onSearchInputChange}/>
-            { products && <SearchFormResult products={products} /> }
+            { products && <SearchFormResult products={products} metadata={metadata}/> }
         </div>
     </form>
 )
+
+const getMetadata = ({ length }) => ({
+   shown: Math.min(4, length),
+   total: length
+});
 
 const Connected = () => {
     const onSearchInputChange =
@@ -33,18 +35,14 @@ const Connected = () => {
                 run();
         };
 
-    const { data, run } = useAsync({
-       deferFn: async (args) =>  Promise.resolve([
-           {
-               imageSrc: "http://testcreative.co.uk/wp-content/uploads/2018/08/Test-Twitter-Icon.jpg",
-               name: "Prep + Prime Skin Refined Zone",
-               description: "Minimizes Pores, Mattifying, Controls Oil",
-               cost: "20.00"
-           }
-       ])
-    });
+    const { data, run } = useFetch(`http://localhost:3035`, {
+        headers: {
+            Accept: "application/json",
+            'Access-Control-Allow-Origin': "*",
+        },
+    }, { defer: true });
 
-    return <SearchFormView products={data} onSearchInputChange={onSearchInputChange} />
+    return <SearchFormView metadata={data && getMetadata(data)} products={data} onSearchInputChange={onSearchInputChange} />
 }
 
 export const SearchForm = Connected;

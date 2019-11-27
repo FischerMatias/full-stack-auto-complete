@@ -69,3 +69,23 @@
 [27/11/2019 -- 16:49]  Scripts ran on main.js
 [27/11/2019 -- 16:50]  Scripts ran on main.js
 [27/11/2019 -- 16:50]  Scripts ran on main.js
+[27/11/2019 -- 16:57]  restarted!
+[27/11/2019 -- 16:58]  Scripts ran on main.js
+[27/11/2019 -- 16:58]  Scripts ran on main.js
+[27/11/2019 -- 16:59]  Scripts ran on main.js
+[27/11/2019 -- 16:59]  Scripts ran on main.js
+[27/11/2019 -- 16:59]  Scripts ran on main.js
+[27/11/2019 -- 17:3]  Scripts ran on main.js
+[27/11/2019 -- 17:3]  Scripts ran on main.js
+[27/11/2019 -- 17:6]  Info task started
+[27/11/2019 -- 17:10]  restarted!
+[27/11/2019 -- 17:10]  restarted!
+[27/11/2019 -- 17:11]  Info task started
+[27/11/2019 -- 17:12]  Scripts ran on main.js
+[27/11/2019 -- 17:17]  Scripts ran on main.js
+[27/11/2019 -- 17:19]  Scripts ran on main.js
+[27/11/2019 -- 17:19]  Scripts ran on main.js
+[27/11/2019 -- 17:21]  Scripts ran on main.js
+[27/11/2019 -- 17:22]  Scripts ran on main.js
+[27/11/2019 -- 17:22]  Scripts ran on main.js
+[27/11/2019 -- 17:23]  Scripts ran on main.js
