@@ -4,27 +4,12 @@
  */
 import React from 'react';
 
+const Home = () => (
+    <section id="home">
+        <div className="content">
 
-class Home extends React.Component {
+        </div>
+    </section>
+);
 
-    /**
-     * Renders the default app in the window, we have assigned this to an element called root.
-     * 
-     * @returns JSX
-     * @memberof Home
-    */
-    render() {
-        return (
-            <section id="home">
-                <div className="content">
-                    
-                </div>
-            </section>
-        );
-    }
-
-
-}
-
-// Export out the React Component
-module.exports = Home;
+export default Home;

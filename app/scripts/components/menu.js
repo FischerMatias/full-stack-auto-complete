@@ -34,5 +34,4 @@ const Menu = () => {
     );
 };
 
-// Export out the React Component
-module.exports = Menu;
+export default Menu;
