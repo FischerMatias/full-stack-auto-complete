@@ -26,7 +26,7 @@ header.menu form.search div.search-container div.products { text-align: left; -w
 
 header.menu form.search div.search-container div.products div.product { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; float: left; clear: none; padding-right: 15px; padding-bottom: 10px; }
 
-header.menu form.search div.search-container div.products div.product img.product-image { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; display: block; float: left; width: 50%; padding-right: 7.5px; }
+header.menu form.search div.search-container div.products div.product img.product-image { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; display: block; float: left; width: 50%; height: 300px; padding-right: 7.5px; }
 
 header.menu form.search div.search-container div.products div.product div.product-body { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; float: right; width: 50%; padding-left: 7.5px; }
 

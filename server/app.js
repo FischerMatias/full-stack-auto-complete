@@ -19,8 +19,13 @@
     ]
 }
 */
+const { filterSearch } = require('./filters.js');
+const { getSearchParams } = require('./req-params-mapping');
+const { toJSONResult } = require('./result-mapping');
+
 const data      = require('./data');
 const http      = require('http');
+
 const hostname  = 'localhost';
 const port      = 3035;
 
@@ -32,11 +37,14 @@ const port      = 3035;
  * The Request object 'req' represents the request to the server.
  * The ServerResponse object 'res' represents the writable stream back to the client.
  */
+
 http.createServer(function (req, res) {
     // .. Here you can create your data response in a JSON format
-    const results = data.filter(d => Boolean(d.isActive));
+    const { size, search} = getSearchParams(req)
+    const filteredData = filterSearch(data, search);
+    const result = toJSONResult(filteredData, size);
 
-    res.write(JSON.stringify(results)); // Write out the default response
+    res.write(result); // Write out the default response
     res.end(); //end the response
 }).listen( port );
 

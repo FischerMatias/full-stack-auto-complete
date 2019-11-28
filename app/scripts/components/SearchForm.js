@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import SearchInput from "./SearchInput";
 import ResultCount from "./ResultCount";
 import ProductList from "./ProductList";
-import { useFetch } from "react-async";
+import useFetchProducts from "../Hooks/useFetchProducts";
+
+const shownProductsSize = 4;
 
 const SearchFormResult = ({metadata, products}) =>(
     <>
@@ -14,35 +16,48 @@ const SearchFormResult = ({metadata, products}) =>(
     </>
 )
 
-const SearchFormView = ({ metadata, products, onSearchInputChange}) => (
+const SearchFormView = ({ data, onSearchTextChange}) => (
     <form className="search">
         <div className="search-container">
-            <SearchInput onChange={onSearchInputChange}/>
-            { products && <SearchFormResult products={products} metadata={metadata}/> }
+            <SearchInput onTextChange={onSearchTextChange}/>
+            { data && data.totals.total > 0 && <SearchFormResult products={data.res} metadata={data.totals}/> }
         </div>
     </form>
 )
 
-const getMetadata = ({ length }) => ({
-   shown: Math.min(4, length),
-   total: length
-});
+const useTimedRunOrReset = (runFn, condition, deps) => {
+    const [ timed, setTimed] = useState(0);
+
+    useEffect(() => {
+        if(condition) {
+            if(!timed) {
+                setTimed(setTimeout(runFn, 500))
+            } else {
+                clearTimeout(timed);
+                setTimed(setTimeout(runFn, 500))
+            }
+        }
+    }, deps);
+};
+
+const useClearData =
+    (condition, setDataFn, deps) =>
+        useEffect(() => {
+            if(condition)
+                setDataFn(null);
+        }, deps);
 
 const Connected = () => {
-    const onSearchInputChange =
-        ({ target: { value } }) => {
-            if (value.toLowerCase() === "hola")
-                run();
-        };
+    const [searchText, setSearchText] = useState("");
+    const { data, run, setData } = useFetchProducts({
+        size: shownProductsSize,
+        searchText
+    });
 
-    const { data, run } = useFetch(`http://localhost:3035`, {
-        headers: {
-            Accept: "application/json",
-            'Access-Control-Allow-Origin': "*",
-        },
-    }, { defer: true });
+    useTimedRunOrReset(run, searchText.length > 2, [searchText]);
+    useClearData(searchText.length <= 2, setData, [searchText]);
 
-    return <SearchFormView metadata={data && getMetadata(data)} products={data} onSearchInputChange={onSearchInputChange} />
+    return <SearchFormView data={data} onSearchTextChange={setSearchText} />
 }
 
 export const SearchForm = Connected;
