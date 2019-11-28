@@ -152,3 +152,31 @@
 [28/11/2019 -- 11:20]  Scripts ran on main.js
 [28/11/2019 -- 11:20]  Scripts ran on main.js
 [28/11/2019 -- 11:20]  Scripts ran on main.js
+[28/11/2019 -- 11:22]  Info task started
+[28/11/2019 -- 11:24]  Scripts ran on main.js
+[28/11/2019 -- 11:46]  Scripts ran on main.js
+[28/11/2019 -- 11:47]  Scripts ran on main.js
+[28/11/2019 -- 12:17]  Scripts ran on main.js
+[28/11/2019 -- 12:17]  Scripts ran on main.js
+[28/11/2019 -- 12:19]  Scripts ran on main.js
+[28/11/2019 -- 12:21]  Scripts ran on main.js
+[28/11/2019 -- 12:22]  Scripts ran on main.js
+[28/11/2019 -- 12:22]  Scripts ran on main.js
+[28/11/2019 -- 12:23]  Scripts ran on main.js
+[28/11/2019 -- 12:24]  Scripts ran on main.js
+[28/11/2019 -- 12:26]  Sass ran on files
+[28/11/2019 -- 12:27]  Sass ran on files
+[28/11/2019 -- 12:27]  Sass ran on files
+[28/11/2019 -- 12:27]  Sass ran on files
+[28/11/2019 -- 12:28]  Sass ran on files
+[28/11/2019 -- 12:28]  Info task started
+[28/11/2019 -- 12:28]  Sass ran on files
+[28/11/2019 -- 12:29]  Sass ran on files
+[28/11/2019 -- 12:29]  Sass ran on files
+[28/11/2019 -- 12:30]  Sass ran on files
+[28/11/2019 -- 12:31]  Sass ran on files
+[28/11/2019 -- 12:31]  Sass ran on files
+[28/11/2019 -- 12:31]  Sass ran on files
+[28/11/2019 -- 12:32]  Sass ran on files
+[28/11/2019 -- 12:32]  Info task started
+[28/11/2019 -- 12:33]  Info task started

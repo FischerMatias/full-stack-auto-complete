@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResultCount = ({metadata: { shown, total }}) => (
+const ResultCount = ({totals: { shown, total }}) => (
     <div className="shown-results">
         <a className="results-display">
            <span className="search-count">

@@ -16,29 +16,25 @@ header.menu div.menu-container nav i.search { position: absolute; right: 10px; t
 
 header.menu div.menu-container nav a.nav-item { font-family: Helvetica, Arial, Sans-Serif; font-size: 17px; line-height: 70px; text-transform: uppercase; text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent; color: #FFF; margin-right: 20px; }
 
-header.menu form.search { display: block; font-size: 12px; line-height: 1.5; -webkit-font-smoothing: antialiased; font-family: Helvetica, Arial, sans-serif; text-align: center; -webkit-tap-highlight-color: transparent; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; width: 100%; position: absolute; left: 0; right: 0; z-index: 500; border-bottom: 1px solid #c7c7c7; background: white; }
+header.menu form.search { display: block; font-size: 12px; line-height: 1.5; font-family: Helvetica, Arial, sans-serif; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; width: 100%; position: absolute; left: 0; right: 0; z-index: 200; border-bottom: 1px solid #c7c7c7; background: white; }
 
-header.menu form.search div.search-container { text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; max-width: 1281px; margin: 0 auto; position: relative; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+header.menu form.search div.search-container { text-align: center; width: 100%; max-width: 1280px; margin: 0 auto; position: relative; }
 
-header.menu form.search div.search-container input.search-field { margin: 0; vertical-align: baseline; -webkit-box-sizing: border-box; box-sizing: border-box; outline: 0; border-style: solid; border-color: #999999; width: 100%; -webkit-transition: border-color .3s ease-in-out; border-radius: 0; -webkit-appearance: none; text-transform: uppercase; padding: 0; height: 60px; border-width: 0; line-height: 60px; font-size: 30px; }
+header.menu form.search div.search-container input.search-field { margin: 0; vertical-align: baseline; outline: 0; border-style: solid; border-color: #999999; width: 100%; border-radius: 0; text-transform: uppercase; padding: 0; height: 60px; border-width: 0; line-height: 60px; font-size: 30px; }
 
-header.menu form.search div.search-container div.products { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #c7c7c7; padding: 15px 0 10px; }
+header.menu form.search div.search-container div.products { text-align: left; border-top: 1px solid #c7c7c7; padding: 15px 0 10px; }
 
-header.menu form.search div.search-container div.products div.product { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; float: left; clear: none; padding-right: 15px; padding-bottom: 10px; }
+header.menu form.search div.search-container div.products div.product { width: 25%; float: left; clear: none; padding-right: 15px; padding-bottom: 10px; }
 
-header.menu form.search div.search-container div.products div.product img.product-image { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; display: block; float: left; width: 50%; height: 300px; padding-right: 7.5px; }
+header.menu form.search div.search-container div.products div.product img.product-image { display: block; float: left; width: 50%; height: 300px; padding-right: 7.5px; }
 
-header.menu form.search div.search-container div.products div.product div.product-body { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; float: right; width: 50%; padding-left: 7.5px; }
+header.menu form.search div.search-container div.products div.product div.product-body { float: right; width: 50%; padding-left: 7.5px; text-transform: uppercase; }
 
-header.menu form.search div.search-container div.products div.product div.product-body h4.product-name { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; text-transform: uppercase; line-height: 1; font-size: 18px; padding: 0; display: inline-block; -webkit-transition: border-bottom-color .3s ease-in-out; text-decoration: none; border-bottom: none; margin: 0; }
+header.menu form.search div.search-container div.products div.product div.product-body h4.product-name { line-height: 1; font-size: 18px; padding: 0; display: inline-block; -webkit-transition: border-bottom-color .3s ease-in-out; transition: border-bottom-color .3s ease-in-out; text-decoration: none; border-bottom: none; margin: 0; }
 
-header.menu form.search div.search-container div.products div.product div.product-body div.product-description { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; text-transform: uppercase; }
+header.menu form.search div.search-container div.shown-results { text-align: left; height: 60px; border-top: 1px solid #c7c7c7; display: block; line-height: 60px; padding-top: 0; }
 
-header.menu form.search div.search-container div.shown-results { text-align: left; -webkit-box-sizing: border-box; box-sizing: border-box; height: 60px; border-top: 1px solid #c7c7c7; display: block; line-height: 60px; padding-top: 0; }
-
-header.menu form.search div.search-container div.shown-results a.results-display { text-align: left; line-height: 60px; -webkit-box-sizing: border-box; box-sizing: border-box; text-transform: uppercase; -webkit-transition: border-bottom-color .3s ease-in-out; text-decoration: none; border-bottom: none; }
-
-header.menu form.search div.search-container div.shown-results a.results-display span.search-count { text-align: left; line-height: 60px; text-transform: uppercase; -webkit-box-sizing: border-box; box-sizing: border-box; }
+header.menu form.search div.search-container div.shown-results a.results-display { line-height: 60px; text-transform: uppercase; -webkit-transition: border-bottom-color .3s ease-in-out; text-decoration: none; border-bottom: none; }
 
 /** This is the central home page */
 section#home { position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 100px 20px 0; background-image: url("/img/header.jpg"); background-size: cover; background-repeat: no-repeat; }

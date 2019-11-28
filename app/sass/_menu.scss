@@ -65,43 +65,35 @@ header.menu {
 
     form.search {
         display: block;
-
         font-size: 12px;
         line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
         font-family: Helvetica, Arial, sans-serif;
         text-align: center;
-        -webkit-tap-highlight-color: transparent;
         box-sizing: border-box;
         margin: 0;
         width: 100%;
         position: absolute;
         left: 0;
         right: 0;
-        z-index: 500;
+        z-index: 200;
         border-bottom: 1px solid #c7c7c7;
         background: white;
 
         div.search-container {
             text-align: center;
-            box-sizing: border-box;
             width: 100%;
-            max-width: 1281px;
+            max-width: 1280px;
             margin: 0 auto;
             position: relative;
-            flex-direction: column;
 
             input.search-field {
                 margin: 0;
                 vertical-align: baseline;
-                box-sizing: border-box;
                 outline: 0;
                 border-style: solid;
                 border-color: #999999;
                 width: 100%;
-                -webkit-transition: border-color .3s ease-in-out;
                 border-radius: 0;
-                -webkit-appearance: none;
                 text-transform: uppercase;
                 padding: 0;
                 height: 60px;
@@ -112,23 +104,17 @@ header.menu {
 
             div.products {
                 text-align: left;
-                box-sizing: border-box;
                 border-top: 1px solid #c7c7c7;
                 padding: 15px 0 10px;
 
                 div.product{
-                    text-align: left;
-                    box-sizing: border-box;
                     width: 25%;
                     float: left;
                     clear: none;
                     padding-right: 15px;
                     padding-bottom: 10px;
 
-
                     img.product-image{
-                        text-align: left;
-                        box-sizing: border-box;
                         display: block;
                         float: left;
                         width: 50%;
@@ -137,30 +123,20 @@ header.menu {
                     }
 
                     div.product-body {
-                        text-align: left;
-                        box-sizing: border-box;
                         float: right;
                         width: 50%;
                         padding-left: 7.5px;
+                        text-transform: uppercase;
 
                         h4.product-name {
-                            text-align: left;
-                            box-sizing: border-box;
-                            text-transform: uppercase;
                             line-height: 1;
                             font-size: 18px;
                             padding: 0;
                             display: inline-block;
-                            -webkit-transition: border-bottom-color .3s ease-in-out;
+                            transition: border-bottom-color .3s ease-in-out;
                             text-decoration: none;
                             border-bottom: none;
                             margin: 0;
-                        }
-
-                        div.product-description {
-                            text-align: left;
-                            box-sizing: border-box;
-                            text-transform: uppercase;
                         }
                     }
                 }
@@ -168,7 +144,6 @@ header.menu {
 
             div.shown-results {
                 text-align: left;
-                box-sizing: border-box;
                 height: 60px;
                 border-top: 1px solid #c7c7c7;
                 display: block;
@@ -176,20 +151,11 @@ header.menu {
                 padding-top: 0;
 
                 a.results-display {
-                    text-align: left;
                     line-height: 60px;
-                    box-sizing: border-box;
                     text-transform: uppercase;
                     -webkit-transition: border-bottom-color .3s ease-in-out;
                     text-decoration: none;
                     border-bottom: none;
-
-                    span.search-count {
-                        text-align: left;
-                        line-height: 60px;
-                        text-transform: uppercase;
-                        box-sizing: border-box;
-                    }
                 }
             }
         }
