@@ -1,2 +1,1 @@
 :::: Log File ::::
-[28/11/2019 -- 13:18]  Info task started

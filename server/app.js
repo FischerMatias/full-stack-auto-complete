@@ -19,12 +19,13 @@
     ]
 }
 */
+const http      = require('http');
+
 const { filterSearch } = require('./filters.js');
 const { getSearchParams } = require('./req-params-mapping');
 const { toJSONResult } = require('./result-mapping');
-
+const {allowCORS} = require("./utils");
 const data      = require('./data');
-const http      = require('http');
 
 const hostname  = 'localhost';
 const port      = 3035;
@@ -44,7 +45,11 @@ http.createServer(function (req, res) {
     const filteredData = filterSearch(data, search);
     const result = toJSONResult(filteredData, size);
 
+    allowCORS(res);
     res.write(result); // Write out the default response
+
+
+
     res.end(); //end the response
 }).listen( port );
 
