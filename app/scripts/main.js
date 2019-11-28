@@ -16,8 +16,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'babel-polyfill';
-import Menu from './components/menu';
-import Home from './components/home';
+import Menu from './components/Menu';
+import Home from './components/Home';
 
 
 /**

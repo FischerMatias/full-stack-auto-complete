@@ -29,7 +29,7 @@ const Menu = () => {
                     </nav>
                 </div>
             </div>
-            { searchVisible &&  <SearchForm /> }
+            { searchVisible &&  <SearchForm onCloseClick={toggleSearch}/> }
         </header>
     );
 };
