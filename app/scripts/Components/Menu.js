@@ -1,10 +1,10 @@
 /**
  * This file will hold the Menu that lives at the top of the Page, this is all rendered using a React Component...
- * 
+ *
  */
-import React from 'react';
-import {useFlag} from "../Hooks/useFlag";
-import {SearchForm} from "./SearchForm";
+import React from "react";
+import { useFlag } from "../Hooks/useFlag";
+import { SearchForm } from "./SearchForm";
 
 const Menu = () => {
     const { flag: searchVisible, toggleFlag: toggleSearch } = useFlag();
@@ -29,7 +29,7 @@ const Menu = () => {
                     </nav>
                 </div>
             </div>
-            { searchVisible &&  <SearchForm onCloseClick={toggleSearch}/> }
+            { searchVisible && <SearchForm onCloseClick={toggleSearch}/> }
         </header>
     );
 };

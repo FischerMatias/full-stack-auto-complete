@@ -15,9 +15,9 @@ const containsTag =
         tags.some(t => lowerCaseIncludes(search, t));
 
 exports.filterSearch =
-    (data, search)  =>
+    (data, search) =>
         data
-            .filter( (product) =>
+            .filter((product) =>
                 isActive(product) && (
                     containsSearch(product, search) ||
                     containsTag(search, product)

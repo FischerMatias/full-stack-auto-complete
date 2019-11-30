@@ -1,10 +1,10 @@
-import {useFetch} from "react-async";
+import { useFetch } from "react-async";
 
-const useFetchProducts = ({size, searchText}) =>
+const useFetchProducts = ({ size, searchText }) =>
     useFetch(`http://localhost:3035?size=${size}&searchText=${searchText}`, {
         headers: {
-            Accept: "application/json",
-        },
+            Accept: "application/json"
+        }
     }, { defer: true });
 
 export default useFetchProducts;

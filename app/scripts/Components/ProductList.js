@@ -1,5 +1,6 @@
-import React from 'react';
-import Product from "./Product";
+import React from "react";
+import Product, { productPropType } from "./Product";
+import PropTypes from "prop-types";
 
 const shownProducts = 4;
 
@@ -11,10 +12,14 @@ const toProductItems = (products) =>
         .slice(0, shownProducts)
         .map(p => toProductItem(p));
 
-const ProductList = ({products}) => (
+const ProductList = ({ products }) => (
     <div className="products">
         {toProductItems(products)}
     </div>
 );
 
-export default  ProductList;
+ProductList.propTypes = {
+    products: PropTypes.arrayOf(productPropType).isRequired
+};
+
+export default ProductList;

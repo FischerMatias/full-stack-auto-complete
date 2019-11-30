@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 
 export const useFlag = () => {
     const [flag, setFlag] = useState(false);
@@ -11,5 +11,5 @@ export const useFlag = () => {
         return newVal;
     };
 
-    return {flag, setFlag, toggleFlag};
+    return { flag, setFlag, toggleFlag };
 };
