@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 
 const toCurrencyDisplay =
     (price) =>
-        new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(price);
+        new Intl
+            .NumberFormat("en-US", { style: "currency", currency: "USD" })
+            .format(price);
 
 const toCollapsedDescription =
     (about) =>

@@ -12,3 +12,35 @@
 [30/11/2019 -- 9:38]  Scripts ran on main.js
 [30/11/2019 -- 9:40]  Info task started
 [30/11/2019 -- 9:41]  Scripts ran on main.js
+[30/11/2019 -- 9:45]  Scripts ran on main.js
+[30/11/2019 -- 9:45]  Scripts ran on main.js
+[30/11/2019 -- 9:46]  restarted!
+[30/11/2019 -- 9:46]  Info task started
+[30/11/2019 -- 9:50]  Scripts ran on main.js
+[30/11/2019 -- 9:54]  Sass ran on files
+[30/11/2019 -- 9:54]  Sass ran on files
+[30/11/2019 -- 9:55]  Sass ran on files
+[30/11/2019 -- 9:55]  Sass ran on files
+[30/11/2019 -- 9:56]  Sass ran on files
+[30/11/2019 -- 9:57]  Sass ran on files
+[30/11/2019 -- 9:57]  Sass ran on files
+[30/11/2019 -- 9:58]  Sass ran on files
+[30/11/2019 -- 9:59]  Sass ran on files
+[30/11/2019 -- 10:0]  Sass ran on files
+[30/11/2019 -- 10:0]  Sass ran on files
+[30/11/2019 -- 10:1]  Sass ran on files
+[30/11/2019 -- 10:1]  Sass ran on files
+[30/11/2019 -- 10:2]  Sass ran on files
+[30/11/2019 -- 10:2]  Sass ran on files
+[30/11/2019 -- 10:3]  Sass ran on files
+[30/11/2019 -- 10:3]  Sass ran on files
+[30/11/2019 -- 10:4]  Sass ran on files
+[30/11/2019 -- 10:4]  Sass ran on files
+[30/11/2019 -- 10:4]  Sass ran on files
+[30/11/2019 -- 10:6]  Sass ran on files
+[30/11/2019 -- 10:7]  Sass ran on files
+[30/11/2019 -- 10:7]  Sass ran on files
+[30/11/2019 -- 10:7]  Sass ran on files
+[30/11/2019 -- 10:7]  Sass ran on files
+[30/11/2019 -- 10:7]  Sass ran on files
+[30/11/2019 -- 10:8]  Sass ran on files

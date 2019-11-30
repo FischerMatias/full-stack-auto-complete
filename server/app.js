@@ -41,9 +41,9 @@ const port = 3035;
 
 http.createServer(function (req, res) {
     // .. Here you can create your data response in a JSON format
-    const { size, search } = getSearchParams(req);
+    const { resultSize, search } = getSearchParams(req);
     const filteredData = filterSearch(data, search);
-    const result = toJSONResult(filteredData, size);
+    const result = toJSONResult(filteredData, resultSize);
 
     allowCORS(res);
     res.write(result); // Write out the default response

@@ -1,7 +1,7 @@
 import { useFetch } from "react-async";
 
-const useFetchProducts = ({ size, searchText }) =>
-    useFetch(`http://localhost:3035?size=${size}&searchText=${searchText}`, {
+const useFetchProducts = ({ shownProductsSize, searchText }) =>
+    useFetch(`http://localhost:3035?shownProductsSize=${shownProductsSize}&searchText=${searchText}`, {
         headers: {
             Accept: "application/json"
         }

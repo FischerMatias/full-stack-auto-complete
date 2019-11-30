@@ -3,8 +3,8 @@ const isActive =
         isActive === "true";
 
 const lowerCaseIncludes =
-    (s1, s2) =>
-        s1.toLowerCase().includes(s2.toLowerCase());
+    (targetString, includedString) =>
+        targetString.toLowerCase().includes(includedString.toLowerCase());
 
 const containsSearch =
     ({ name }, search) =>
@@ -12,7 +12,7 @@ const containsSearch =
 
 const containsTag =
     (search, { tags }) =>
-        tags.some(t => lowerCaseIncludes(search, t));
+        tags.some(tag => lowerCaseIncludes(search, tag));
 
 exports.filterSearch =
     (data, search) =>

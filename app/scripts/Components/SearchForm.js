@@ -26,7 +26,7 @@ const SearchFormView = ({ data, onSearchTextChange, onCloseClick }) => (
 const Connected = ({ onCloseClick }) => {
     const [searchText, setSearchText] = useState("");
     const { data, run, setData } = useFetchProducts({
-        size: shownProductsSize,
+        shownProductsSize,
         searchText
     });
 

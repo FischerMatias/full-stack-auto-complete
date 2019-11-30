@@ -105,25 +105,21 @@ header.menu {
             div.products {
                 text-align: left;
                 border-top: 1px solid #c7c7c7;
-                padding: 15px 0 10px;
+                padding: 0 0 10px;
+                min-width: 950px;
 
                 div.product{
                     width: 25%;
-                    float: left;
-                    clear: none;
                     padding-right: 15px;
                     padding-bottom: 10px;
 
                     img.product-image{
-                        display: block;
-                        float: left;
                         width: 50%;
-                        height: 300px;
+                        min-width: 100px;
                         padding-right: 7.5px;
                     }
 
                     div.product-body {
-                        float: right;
                         width: 50%;
                         padding-left: 7.5px;
                         text-transform: uppercase;
@@ -189,6 +185,28 @@ header.menu {
                 transform: rotate(-45deg);
             }
 
+        }
+    }
+
+    div.products {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    div.product{
+        display: flex;
+        align-self: center;
+    }
+
+    div.product-body{
+        align-self: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        div.products {
+            flex-direction: column;
+            min-width: 200px;
         }
     }
 }

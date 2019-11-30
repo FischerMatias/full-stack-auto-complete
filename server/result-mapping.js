@@ -1,5 +1,5 @@
-const toResult = (filteredData, size) => {
-    const queriedData = filteredData.slice(0, size);
+const toResult = (filteredData, resultSize) => {
+    const queriedData = filteredData.slice(0, resultSize);
 
     return {
         res: queriedData,
@@ -11,7 +11,7 @@ const toResult = (filteredData, size) => {
 };
 
 exports.toJSONResult =
-    (filteredData, size) =>
+    (filteredData, resultSize) =>
         JSON.stringify(
-            toResult(filteredData, size)
+            toResult(filteredData, resultSize)
         );
