@@ -13,9 +13,8 @@ const SearchFormResultView = ({ res: products, totals }) => (
     </>
 );
 
-const Providing =
-    ({ data }) =>
-        <SearchFormResultView {...data} />;
+const Providing = ({ data }) =>
+    <SearchFormResultView {...data} />;
 
 export const searchResultPropType = PropTypes.shape({
     res: PropTypes.arrayOf(productPropType),

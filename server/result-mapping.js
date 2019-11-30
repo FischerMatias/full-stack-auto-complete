@@ -10,8 +10,7 @@ const toResult = (filteredData, resultSize) => {
     };
 };
 
-exports.toJSONResult =
-    (filteredData, resultSize) =>
-        JSON.stringify(
-            toResult(filteredData, resultSize)
-        );
+exports.toJSONResult = (filteredData, resultSize) =>
+    JSON.stringify(
+        toResult(filteredData, resultSize)
+    );

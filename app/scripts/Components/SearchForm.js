@@ -9,9 +9,8 @@ import PropTypes from "prop-types";
 
 const shownProductsSize = 4;
 
-const SearchCloseButton =
-    ({ onClick }) =>
-        <a className="close" onClick={onClick} />;
+const SearchCloseButton = ({ onClick }) =>
+    <a className="close" onClick={onClick} />;
 
 const SearchFormView = ({ data, onSearchTextChange, onCloseClick }) => (
     <form className="search">

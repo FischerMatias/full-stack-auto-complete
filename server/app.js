@@ -47,7 +47,6 @@ http.createServer(function (req, res) {
 
     allowCORS(res);
     res.write(result); // Write out the default response
-
     res.end(); // end the response
 }).listen(port);
 

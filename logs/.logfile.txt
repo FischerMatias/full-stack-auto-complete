@@ -44,3 +44,14 @@
 [30/11/2019 -- 10:7]  Sass ran on files
 [30/11/2019 -- 10:7]  Sass ran on files
 [30/11/2019 -- 10:8]  Sass ran on files
+[30/11/2019 -- 10:10]  Scripts ran on main.js
+[30/11/2019 -- 10:10]  Scripts ran on main.js
+[30/11/2019 -- 10:11]  Scripts ran on main.js
+[30/11/2019 -- 10:11]  Scripts ran on main.js
+[30/11/2019 -- 10:14]  Sass ran on files
+[30/11/2019 -- 10:14]  Sass ran on files
+[30/11/2019 -- 10:14]  Sass ran on files
+[30/11/2019 -- 10:16]  restarted!
+[30/11/2019 -- 10:16]  restarted!
+[30/11/2019 -- 10:16]  restarted!
+[30/11/2019 -- 10:16]  restarted!
