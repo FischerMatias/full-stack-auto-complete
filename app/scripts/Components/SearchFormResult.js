@@ -17,12 +17,15 @@ const Providing =
     ({ data }) =>
         <SearchFormResultView {...data} />;
 
-export const searchResultPropType = {
-    res: PropTypes.arrayOf(productPropType).isRequired,
-    totals: totalsPropType.isRequired
-};
+export const searchResultPropType = PropTypes.shape({
+    res: PropTypes.arrayOf(productPropType),
+    totals: totalsPropType
+});
 
-SearchFormResultView.propTypes = searchResultPropType;
+SearchFormResultView.propTypes = {
+    res: PropTypes.arrayOf(productPropType),
+    totals: totalsPropType
+};
 
 Providing.propTypes = {
     data: searchResultPropType

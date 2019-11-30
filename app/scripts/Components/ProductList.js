@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 
 const shownProducts = 4;
 
-const toProductItem = (product) =>
-    <Product product={product} />;
+const toProductItem = (product, index) =>
+    <Product key={index} product={product} />;
 
 const toProductItems = (products) =>
     products
         .slice(0, shownProducts)
-        .map(p => toProductItem(p));
+        .map(toProductItem);
 
 const ProductList = ({ products }) => (
     <div className="products">
