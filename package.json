@@ -29,7 +29,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "7.7.4",
     "@babel/preset-react": "^7.7.4",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.3.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "browser-sync": "^2.26.3",
@@ -53,8 +53,8 @@
     "react-async": "^9.0.0",
     "react-dom": "^16.8.6",
     "uglify-js": "3.2.2",
-    "webpack": "3.10.0",
-    "webpack-stream": "4.0.0",
+    "webpack": "5.75.0",
+    "webpack-stream": "7.0.0",
     "prop-types": "latest"
   }
 }
